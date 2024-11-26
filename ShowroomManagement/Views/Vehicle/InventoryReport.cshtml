@@ -1,0 +1,27 @@
+@model IEnumerable<ShowroomManagement.Models.Vehicle>
+
+<h1>Inventory Report</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Model No</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.ModelNo</td>
+                <td>@vehicle.Name</td>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Price</td>
+                <td>@vehicle.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,35 @@
+@model IEnumerable<ShowroomManagement.Models.Vehicle>
+
+<h1>Inventory Report</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Model No</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.ModelNo</td>
+                <td>@vehicle.Name</td>
+                <td>@vehicle.Brand</td>
+                <td>@vehicle.Price</td>
+                <td>@vehicle.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Vehicle/ExportInventory" class="btn btn-success">Download Inventory Report (Excel)</a>
+<form method="get">
+    <select name="status" class="form-control mb-3">
+        <option value="All">All</option>
+        <option value="Available">Available</option>
+        <option value="Sold">Sold</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>

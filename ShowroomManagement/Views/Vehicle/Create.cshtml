@@ -1,0 +1,33 @@
+@model ShowroomManagement.Models.Vehicle
+
+<div class="container mt-4">
+    <h1>Create New Vehicle</h1>
+    <hr />
+
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label for="ModelNo">Model No</label>
+            <input type="text" class="form-control" id="ModelNo" name="ModelNo" />
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="Name" name="Name" />
+        </div>
+        <div class="form-group">
+            <label for="Brand">Brand</label>
+            <input type="text" class="form-control" id="Brand" name="Brand" />
+        </div>
+        <div class="form-group">
+            <label for="Price">Price</label>
+            <input type="number" class="form-control" id="Price" name="Price" />
+        </div>
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <select class="form-control" id="Status" name="Status">
+                <option value="Available">Available</option>
+                <option value="Sold">Sold</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Create</button>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+@model IEnumerable<ShowroomManagement.Models.Vehicle>
+
+<div class="container mt-4">
+    <h1>Manage Vehicles</h1>
+    <hr />
+    
+    <!-- Nút thêm phương tiện mới -->
+    <a href="@Url.Action("Create", "Vehicle")" class="btn btn-success mb-4">Add New Vehicle</a>
+    
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Model No</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vehicle in Model)
+            {
+                <tr>
+                    <td>@vehicle.ModelNo</td>
+                    <td>@vehicle.Name</td>
+                    <td>@vehicle.Brand</td>
+                    <td>@vehicle.Price</td>
+                    <td>@vehicle.Status</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Vehicle", new { id = vehicle.Id })" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="@Url.Action("Details", "Vehicle", new { id = vehicle.Id })" class="btn btn-info btn-sm">Details</a>
+                        <a href="@Url.Action("Delete", "Vehicle", new { id = vehicle.Id })" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

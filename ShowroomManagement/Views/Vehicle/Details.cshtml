@@ -1,0 +1,43 @@
+@model ShowroomManagement.Models.Order
+
+<div class="container mt-4">
+    <h1>Order Details</h1>
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-3">Order Date</dt>
+        <dd class="col-sm-9">@Model.OrderDate.ToString("d")</dd>
+
+        <dt class="col-sm-3">Vehicle</dt>
+        <dd class="col-sm-9">
+            @if (Model.Vehicle != null)
+            {
+                @($"{Model.Vehicle.Name} ({Model.Vehicle.Brand})")
+            }
+            else
+            {
+                <span class="text-danger">Vehicle information not available</span>
+            }
+        </dd>
+
+        <dt class="col-sm-3">Customer</dt>
+        <dd class="col-sm-9">
+            @if (Model.Customer != null)
+            {
+                @Model.Customer.Name
+            }
+            else
+            {
+                <span class="text-danger">Customer information not available</span>
+            }
+        </dd>
+
+        <dt class="col-sm-3">Total Price</dt>
+        <dd class="col-sm-9">@Model.TotalPrice.ToString("C")</dd>
+
+        <dt class="col-sm-3">Payment Method</dt>
+        <dd class="col-sm-9">@Model.PaymentMethod</dd>
+    </dl>
+
+    <a href="@Url.Action("Index", "Order")" class="btn btn-primary">Back to Orders</a>
+</div>

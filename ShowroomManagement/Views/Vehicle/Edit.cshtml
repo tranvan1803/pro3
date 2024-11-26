@@ -1,0 +1,35 @@
+@model ShowroomManagement.Models.Vehicle
+
+<div class="container mt-4">
+    <h1>Edit Vehicle</h1>
+    <hr />
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="Id" />
+        
+        <div class="form-group">
+            <label for="ModelNo">Model No</label>
+            <input type="text" class="form-control" asp-for="ModelNo" />
+        </div>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" asp-for="Name" />
+        </div>
+        <div class="form-group">
+            <label for="Brand">Brand</label>
+            <input type="text" class="form-control" asp-for="Brand" />
+        </div>
+        <div class="form-group">
+            <label for="Price">Price</label>
+            <input type="number" class="form-control" asp-for="Price" />
+        </div>
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <select class="form-control" asp-for="Status">
+                <option value="Available">Available</option>
+                <option value="Sold">Sold</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+    </form>
+</div>

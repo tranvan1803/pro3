@@ -6,7 +6,6 @@ public static class UserInitializer
     {
         var adminEmail = "admin@showroom.com";
         var adminPassword = "Admin@123";
-
         
         {
             var admin = new IdentityUser { UserName = adminEmail, Email = adminEmail };

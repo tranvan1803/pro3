@@ -18,6 +18,10 @@ namespace ShowroomManagement.Models
         [Compare("Password", ErrorMessage = "Passwords do not match.")]
         [DataType(DataType.Password)]
         public required string ConfirmPassword { get; set; }
+
+        [Display(Name = "Avatar")]
+        public IFormFile? Avatar { get; set; }
+        public bool IsAdmin { get; set; }
     }
 
 }

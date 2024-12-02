@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShowroomManagement.Data; // Namespace chứa ApplicationDbContext
+using ShowroomManagement.Models; // Namespace chứa ApplicationUser
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cấu hình DbContext
+// Cấu hình DbContext cho MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -12,34 +13,29 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     ));
 
 // Cấu hình Identity
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false; // Cho phép đăng nhập mà không cần xác nhận email
 })
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
 
-// Cấu hình Authentication với Cookie
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-    options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-})
-.AddCookie(options =>
+// Cấu hình Cookie Authentication (đã được cấu hình bởi AddIdentity)
+builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login"; // Đường dẫn đến trang đăng nhập
     options.LogoutPath = "/Account/Logout"; // Đường dẫn đăng xuất
+    options.AccessDeniedPath = "/Account/AccessDenied"; // Đường dẫn khi bị từ chối truy cập
     options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Thời gian hiệu lực cookie
 });
 
 // Đăng ký dịch vụ Controller với Views
 builder.Services.AddControllersWithViews();
 
-// Cấu hình Authorization
+// Cấu hình Authorization (có thể thêm policy nếu cần)
 builder.Services.AddAuthorization(options =>
 {
-    // Có thể thêm các policy nếu cần
-    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin")); // Policy chỉ dành cho Admin
 });
 
 var app = builder.Build();
@@ -64,10 +60,5 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "access-denied",
-    pattern: "Account/AccessDenied",
-    defaults: new { controller = "Account", action = "AccessDenied" });
 
 app.Run();

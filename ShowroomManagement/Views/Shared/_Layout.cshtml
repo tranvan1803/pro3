@@ -24,6 +24,8 @@
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <li class="nav-item">
+                                <img src="@User.Claims.FirstOrDefault(c => c.Type == "Avatar")?.Value" alt="Avatar"
+                                    class="rounded-circle" width="50" onerror="this.src='/images/default-avatar.png'" />
                                 <span class="nav-link text-primary">Hello, @User.Identity.Name</span>
                             </li>
                             <li class="nav-item">
@@ -43,6 +45,12 @@
                             </li>
                         }
                     </ul>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Admin" asp-action="Dashboard">Admin Dashboard</a>
+                        </li>
+                    }
                 </div>
             </div>
         </nav>

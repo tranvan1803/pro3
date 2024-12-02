@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\16a00ca4-88f2-46ca-83e1-745fd1d4999d_Screenshot (4).png",
+      "PackagePath": "staticwebassets\\images\\16a00ca4-88f2-46ca-83e1-745fd1d4999d_Screenshot (4).png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
+      "PackagePath": "staticwebassets\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\default-avatar.png",
+      "PackagePath": "staticwebassets\\images\\default-avatar.png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png",
+      "PackagePath": "staticwebassets\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png"
+    },
+    {
       "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

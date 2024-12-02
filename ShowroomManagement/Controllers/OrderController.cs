@@ -31,20 +31,26 @@ namespace ShowroomManagement.Controllers
         }
 
         // GET: Order/Details/5
+        // Controller action trả về Order
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
+            {
                 return NotFound();
+            }
 
+            // Lấy Order từ CSDL
             var order = await _context.Orders
-                .Include(o => o.Customer)
-                .Include(o => o.Vehicle)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(o => o.Vehicle) // Bao gồm thông tin Vehicle
+                .Include(o => o.Customer) // Bao gồm thông tin Customer
+                .FirstOrDefaultAsync(o => o.Id == id);
 
             if (order == null)
+            {
                 return NotFound();
+            }
 
-            return View(order);
+            return View(order); // Trả về Order cho view
         }
 
         // GET: Order/Create

@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ShowroomManagement.kk6oy8bpql.bundle.scp.css"
+      "PackagePath": "staticwebassets\\ShowroomManagement.h5lg8hjfyn.bundle.scp.css"
     },
     {
       "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\css\\site.css",
@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png"
     },
     {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "PackagePath": "staticwebassets\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "PackagePath": "staticwebassets\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png"
+    },
+    {
       "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png"
     },
@@ -31,6 +39,14 @@
     {
       "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "PackagePath": "staticwebassets\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+    },
+    {
+      "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "PackagePath": "staticwebassets\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png"
     },
     {
       "Id": "D:\\project_III\\ShowroomManagement\\wwwroot\\js\\site.js",

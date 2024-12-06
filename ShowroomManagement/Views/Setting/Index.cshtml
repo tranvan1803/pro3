@@ -1,0 +1,29 @@
+@model IEnumerable<ShowroomManagement.Models.Setting>
+
+<h2>Settings</h2>
+<a asp-action="Create" class="btn btn-primary">Create New Setting</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var setting in Model)
+        {
+            <tr>
+                <td>@setting.Key</td>
+                <td>@setting.Value</td>
+                <td>
+                    <!-- Add Edit/Delete buttons if needed -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-secondary" onclick="window.history.back();">
+    <i class="bi bi-arrow-left"></i> Go Back
+</button>

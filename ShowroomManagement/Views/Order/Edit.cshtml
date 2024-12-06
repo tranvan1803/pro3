@@ -30,7 +30,10 @@
 
         <div class="form-group">
             <label asp-for="PaymentMethod" class="control-label"></label>
-            <select asp-for="PaymentMethod" class="form-control" asp-items="Model.PaymentMethods"></select>
+            <select asp-for="PaymentMethod"
+                asp-items="Html.GetEnumSelectList<ShowroomManagement.Models.PaymentMethod>()" class="form-control">
+                <!-- Tự động tạo danh sách các phương thức thanh toán từ enum -->
+            </select>
             <span asp-validation-for="PaymentMethod" class="text-danger"></span>
         </div>
 

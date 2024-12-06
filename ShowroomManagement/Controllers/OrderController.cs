@@ -32,26 +32,20 @@ namespace ShowroomManagement.Controllers
 
         // GET: Order/Details/5
         // Controller action trả về Order
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            // Lấy Order từ CSDL
-            var order = await _context.Orders
-                .Include(o => o.Vehicle) // Bao gồm thông tin Vehicle
-                .Include(o => o.Customer) // Bao gồm thông tin Customer
-                .FirstOrDefaultAsync(o => o.Id == id);
+            var order = _context.Orders
+                                .Include(o => o.Vehicle) // Load thông tin Vehicle
+                                .FirstOrDefault(o => o.Id == id);
 
             if (order == null)
             {
                 return NotFound();
             }
 
-            return View(order); // Trả về Order cho view
+            return View(order); // Truyền dữ liệu Order vào View
         }
+
 
         // GET: Order/Create
         public IActionResult Create()
@@ -232,6 +226,31 @@ namespace ShowroomManagement.Controllers
         private bool OrderExists(int id)
         {
             return _context.Orders.Any(e => e.Id == id);
+        }
+
+        public IActionResult SalesReport()
+        {
+            var orders = _context.Orders
+                .Include(o => o.Customer)
+                .Include(o => o.Vehicle)
+                .ToList();
+
+            return View(orders);
+        }
+
+        public async Task<IActionResult> Invoice(int id)
+        {
+            var order = await _context.Orders
+                .Include(o => o.Customer) // Bao gồm thông tin khách hàng
+                .Include(o => o.Vehicle) // Bao gồm thông tin xe
+                .FirstOrDefaultAsync(o => o.Id == id);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            return View(order);
         }
     }
 }

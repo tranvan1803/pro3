@@ -1,25 +1,32 @@
-@model ShowroomManagement.Models.Vehicle
+@model VehicleViewModel
 
-<div class="container mt-4">
-    <h1>Create New Vehicle</h1>
-    <hr />
+@{
+    ViewData["Title"] = "Create Vehicle";
+}
 
-    <form asp-action="Create" method="post">
+<h1>Create Vehicle</h1>
+
+<div class="container">
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="ModelNo">Model No</label>
-            <input type="text" class="form-control" id="ModelNo" name="ModelNo" />
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label for="Name">Name</label>
-            <input type="text" class="form-control" id="Name" name="Name" />
+            <label asp-for="Brand"></label>
+            <input asp-for="Brand" class="form-control" />
+            <span asp-validation-for="Brand" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label for="Brand">Brand</label>
-            <input type="text" class="form-control" id="Brand" name="Brand" />
+            <label asp-for="ModelNo"></label>
+            <input asp-for="ModelNo" class="form-control" />
+            <span asp-validation-for="ModelNo" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label for="Price">Price</label>
-            <input type="number" class="form-control" id="Price" name="Price" />
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
         </div>
         <div class="form-group">
             <label for="Status">Status</label>
@@ -28,6 +35,34 @@
                 <option value="Sold">Sold</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Create</button>
+        <div class="form-group">
+            <label asp-for="Image"></label>
+            <input asp-for="Image" type="file" class="form-control" id="ImageInput" accept="image/*" />
+            <img id="ImagePreview" src="#" alt="Preview" style="max-width: 100%; height: auto; display: none; margin-top: 10px;" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
+
+@section Scripts {
+    <script>
+        document.getElementById('ImageInput').addEventListener('change', function(event) {
+            const preview = document.getElementById('ImagePreview');
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.style.display = 'none';
+            }
+        });
+    </script>
+}
+
+@await Html.PartialAsync("_GoBackButton")

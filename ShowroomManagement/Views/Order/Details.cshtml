@@ -1,42 +1,87 @@
-@model ShowroomManagement.Models.Vehicle
+@model ShowroomManagement.Models.Order
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Order Details";
 }
 
-<h1>Vehicle Details</h1>
+<h1>Order Details</h1>
 
 <div>
-    <h4>Vehicle</h4>
+    <h4>Vehicle Information</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayName("Vehicle Name")
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
+            @if (Model.Vehicle != null)
+            {
+                @Model.Vehicle.Name
+            }
+            else
+            {
+                <span class="text-danger">No vehicle assigned</span>
+            }
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Brand)
+            @Html.DisplayName("Brand")
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Brand)
+            @if (Model.Vehicle != null)
+            {
+                @Model.Vehicle.Brand
+            }
+            else
+            {
+                <span class="text-danger">No brand available</span>
+            }
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ModelNo)
+            @Html.DisplayName("Model Number")
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ModelNo)
+            @if (Model.Vehicle != null)
+            {
+                @Model.Vehicle.ModelNo
+            }
+            else
+            {
+                <span class="text-danger">No model number available</span>
+            }
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
+            @Html.DisplayName("Price")
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Price)
+            @if (Model.Vehicle != null)
+            {
+                @Model.Vehicle.Price
+            }
+            else
+            {
+                <span class="text-danger">No price available</span>
+            }
+        </dd>
+    </dl>
+
+    <h4>Order Information</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalPrice)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a> |
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>

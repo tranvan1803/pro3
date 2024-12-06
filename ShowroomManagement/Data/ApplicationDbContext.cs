@@ -10,6 +10,8 @@ namespace ShowroomManagement.Data
         public required DbSet<Vehicle> Vehicles { get; set; }
         public required DbSet<Customer> Customers { get; set; }
         public required DbSet<Order> Orders { get; set; }
+         public required DbSet<Setting> Settings { get; set; }
+        public required DbSet<VehicleRegistration> VehicleRegistrations { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

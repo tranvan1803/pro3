@@ -227,6 +227,7 @@ D:\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.sourcelink
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\scopedcss\bundle\ShowroomManagement.styles.css
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\scopedcss\projectbundle\ShowroomManagement.bundle.scp.css
+D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\y5c5asr8b0-8fr1mzqgqw.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\32vnbxawxt-61n19gt1b8.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\edn9xoyglh-xtxxf3hu2r.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\dd6jreup2y-bqjiyaj88i.gz
@@ -288,8 +289,6 @@ D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\29la4r5lsf-2z0ns9n
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\7grq9x3lar-muycvpuwrr.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\no69v0dxcn-87fc7y1x7t.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\2uh6rv0ly7-mlv21k5csn.gz
-D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\5vbg06fc82-kk6oy8bpql.gz
-D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\kylg2u36wf-kk6oy8bpql.gz
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\staticwebassets.build.json
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\staticwebassets.development.json
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -305,4 +304,6 @@ D:\project_III\ShowroomManagement\obj\Debug\net9.0\refint\ShowroomManagement.dll
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.pdb
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.genruntimeconfig.cache
 D:\project_III\ShowroomManagement\obj\Debug\net9.0\ref\ShowroomManagement.dll
-D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\y5c5asr8b0-8fr1mzqgqw.gz
+D:\project_III\ShowroomManagement\bin\Debug\net9.0\DinkToPdf.dll
+D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\5vbg06fc82-h5lg8hjfyn.gz
+D:\project_III\ShowroomManagement\obj\Debug\net9.0\compressed\kylg2u36wf-h5lg8hjfyn.gz

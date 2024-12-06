@@ -7,4 +7,6 @@ public class Vehicle
     public string Brand { get; set; } = string.Empty;   // Không cho phép null
     public decimal Price { get; set; }
     public string Status { get; set; } = "Available";   // Giá trị mặc định
+    public string? ImagePath { get; set; }
+
 }

@@ -72,6 +72,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShowroomManagement</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShowroomManagement</BasePath>
+      <RelativePath>images/5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>weji4axol7</Fingerprint>
+      <Integrity>ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShowroomManagement</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShowroomManagement</BasePath>
+      <RelativePath>images/a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jz1kvxbpqs</Fingerprint>
+      <Integrity>8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png'))">
       <SourceType>Package</SourceType>
       <SourceId>ShowroomManagement</SourceId>
@@ -125,6 +161,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\vehicles\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShowroomManagement</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShowroomManagement</BasePath>
+      <RelativePath>images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o1v5idme12</Fingerprint>
+      <Integrity>lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\vehicles\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\vehicles\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShowroomManagement</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShowroomManagement</BasePath>
+      <RelativePath>images/vehicles/e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jz1kvxbpqs</Fingerprint>
+      <Integrity>8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\vehicles\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>
@@ -1224,23 +1296,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShowroomManagement.kk6oy8bpql.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShowroomManagement.h5lg8hjfyn.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>ShowroomManagement</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShowroomManagement</BasePath>
-      <RelativePath>ShowroomManagement.kk6oy8bpql.bundle.scp.css</RelativePath>
+      <RelativePath>ShowroomManagement.h5lg8hjfyn.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>kk6oy8bpql</Fingerprint>
-      <Integrity>vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=</Integrity>
+      <Fingerprint>h5lg8hjfyn</Fingerprint>
+      <Integrity>61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShowroomManagement.kk6oy8bpql.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ShowroomManagement.h5lg8hjfyn.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

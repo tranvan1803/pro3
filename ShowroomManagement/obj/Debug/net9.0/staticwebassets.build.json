@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q0Jacqa7IavpnGL43f2b4BqUBIe4ArjBat6YFTBiVGk=",
+  "Hash": "mCDgx1bK9lYhPXBCOcElXITe2M9K5g9pmxYvH4co8KQ=",
   "Source": "ShowroomManagement",
   "BasePath": "_content/ShowroomManagement",
   "Mode": "Default",
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-kk6oy8bpql.gz",
+      "Identity": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-h5lg8hjfyn.gz",
       "SourceId": "ShowroomManagement",
       "SourceType": "Computed",
       "ContentRoot": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ShowroomManagement",
-      "RelativePath": "ShowroomManagement#[.{fingerprint=kk6oy8bpql}]?.styles.css.gz",
+      "RelativePath": "ShowroomManagement#[.{fingerprint=h5lg8hjfyn}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ShowroomManagement.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "locvyoo3s3",
-      "Integrity": "C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=",
+      "Fingerprint": "jn4hgl555i",
+      "Integrity": "z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ShowroomManagement.styles.css"
@@ -773,12 +773,12 @@
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-kk6oy8bpql.gz",
+      "Identity": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-h5lg8hjfyn.gz",
       "SourceId": "ShowroomManagement",
       "SourceType": "Computed",
       "ContentRoot": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ShowroomManagement",
-      "RelativePath": "ShowroomManagement#[.{fingerprint=kk6oy8bpql}]!.bundle.scp.css.gz",
+      "RelativePath": "ShowroomManagement#[.{fingerprint=h5lg8hjfyn}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -787,8 +787,8 @@
       "RelatedAsset": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "locvyoo3s3",
-      "Integrity": "C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=",
+      "Fingerprint": "jn4hgl555i",
+      "Integrity": "z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css"
@@ -1375,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "kk6oy8bpql",
-      "Integrity": "vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=",
+      "Fingerprint": "h5lg8hjfyn",
+      "Integrity": "61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ShowroomManagement.styles.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "kk6oy8bpql",
-      "Integrity": "vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=",
+      "Fingerprint": "h5lg8hjfyn",
+      "Integrity": "61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css"
@@ -1487,6 +1487,48 @@
       "OriginalItemSpec": "wwwroot\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png"
     },
     {
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "SourceId": "ShowroomManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
+      "BasePath": "_content/ShowroomManagement",
+      "RelativePath": "images/5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "weji4axol7",
+      "Integrity": "ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png"
+    },
+    {
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "SourceId": "ShowroomManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
+      "BasePath": "_content/ShowroomManagement",
+      "RelativePath": "images/a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jz1kvxbpqs",
+      "Integrity": "8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png"
+    },
+    {
       "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
       "SourceId": "ShowroomManagement",
       "SourceType": "Discovered",
@@ -1548,6 +1590,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png"
+    },
+    {
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "SourceId": "ShowroomManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
+      "BasePath": "_content/ShowroomManagement",
+      "RelativePath": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o1v5idme12",
+      "Integrity": "lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+    },
+    {
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "SourceId": "ShowroomManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
+      "BasePath": "_content/ShowroomManagement",
+      "RelativePath": "images/vehicles/e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jz1kvxbpqs",
+      "Integrity": "8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png"
     },
     {
       "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\js\\site.js",
@@ -3593,6 +3677,170 @@
       ]
     },
     {
+      "Route": "images/5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3267833"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 17:22:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0="
+        }
+      ]
+    },
+    {
+      "Route": "images/5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).weji4axol7.png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3267833"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 17:22:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "weji4axol7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ONE5N6G9rk6FUjAIRLIJ6lZHf8lpfZvjVd64Ywd3cF0="
+        }
+      ]
+    },
+    {
+      "Route": "images/a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).jz1kvxbpqs.png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3040785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 08:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jz1kvxbpqs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3040785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 08:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
       "Route": "images/dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).jz1kvxbpqs.png",
       "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
       "Selectors": [],
@@ -3825,6 +4073,170 @@
         {
           "Name": "Last-Modified",
           "Value": "Tue, 26 Nov 2024 15:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.o1v5idme12.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1v5idme12"
+        },
+        {
+          "Name": "label",
+          "Value": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).jz1kvxbpqs.png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3040785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 16:38:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jz1kvxbpqs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/vehicles/e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3040785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 16:38:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21802,12 +22214,12 @@
     },
     {
       "Route": "ShowroomManagement.bundle.scp.css",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-kk6oy8bpql.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-h5lg8hjfyn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001841620626"
+          "Quality": "0.001358695652"
         }
       ],
       "ResponseHeaders": [
@@ -21817,15 +22229,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21845,13 +22257,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "W/\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
@@ -21866,7 +22278,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1136"
+          "Value": "1831"
         },
         {
           "Name": "Content-Type",
@@ -21874,11 +22286,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21888,13 +22300,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
       "Route": "ShowroomManagement.bundle.scp.css.gz",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-kk6oy8bpql.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-h5lg8hjfyn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21903,7 +22315,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -21911,11 +22323,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21933,18 +22345,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw="
+          "Value": "sha256-z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.bundle.scp.css",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-kk6oy8bpql.gz",
+      "Route": "ShowroomManagement.h5lg8hjfyn.bundle.scp.css",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-h5lg8hjfyn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001841620626"
+          "Quality": "0.001358695652"
         }
       ],
       "ResponseHeaders": [
@@ -21954,15 +22366,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21982,13 +22394,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "W/\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -21996,12 +22408,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.bundle.scp.css",
+      "Route": "ShowroomManagement.h5lg8hjfyn.bundle.scp.css",
       "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22011,7 +22423,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1136"
+          "Value": "1831"
         },
         {
           "Name": "Content-Type",
@@ -22019,11 +22431,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22033,7 +22445,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -22041,13 +22453,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.bundle.scp.css.gz",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-kk6oy8bpql.gz",
+      "Route": "ShowroomManagement.h5lg8hjfyn.bundle.scp.css.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\kylg2u36wf-h5lg8hjfyn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22056,7 +22468,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -22064,11 +22476,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22086,7 +22498,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -22094,18 +22506,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw="
+          "Value": "sha256-z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.styles.css",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-kk6oy8bpql.gz",
+      "Route": "ShowroomManagement.h5lg8hjfyn.styles.css",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-h5lg8hjfyn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001841620626"
+          "Quality": "0.001358695652"
         }
       ],
       "ResponseHeaders": [
@@ -22115,15 +22527,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22143,13 +22555,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "W/\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -22157,12 +22569,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.styles.css",
+      "Route": "ShowroomManagement.h5lg8hjfyn.styles.css",
       "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ShowroomManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22172,7 +22584,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1136"
+          "Value": "1831"
         },
         {
           "Name": "Content-Type",
@@ -22180,11 +22592,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22194,7 +22606,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -22202,13 +22614,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
-      "Route": "ShowroomManagement.kk6oy8bpql.styles.css.gz",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-kk6oy8bpql.gz",
+      "Route": "ShowroomManagement.h5lg8hjfyn.styles.css.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-h5lg8hjfyn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22217,7 +22629,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -22225,11 +22637,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22247,7 +22659,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kk6oy8bpql"
+          "Value": "h5lg8hjfyn"
         },
         {
           "Name": "label",
@@ -22255,18 +22667,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw="
+          "Value": "sha256-z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ="
         }
       ]
     },
     {
       "Route": "ShowroomManagement.styles.css",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-kk6oy8bpql.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-h5lg8hjfyn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001841620626"
+          "Quality": "0.001358695652"
         }
       ],
       "ResponseHeaders": [
@@ -22276,15 +22688,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22304,13 +22716,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "W/\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
@@ -22325,7 +22737,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1136"
+          "Value": "1831"
         },
         {
           "Name": "Content-Type",
@@ -22333,11 +22745,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto=\""
+          "Value": "\"61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22347,13 +22759,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vFZ66KB2V3HtDiNUl9z5ZiT7WwqxEfkBFU0+imEfgto="
+          "Value": "sha256-61RQCSuBO0bxPq8GjBhj/RcJP2ZXuZg9udGoNQifyRo="
         }
       ]
     },
     {
       "Route": "ShowroomManagement.styles.css.gz",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-kk6oy8bpql.gz",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\compressed\\5vbg06fc82-h5lg8hjfyn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22362,7 +22774,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "542"
+          "Value": "735"
         },
         {
           "Name": "Content-Type",
@@ -22370,11 +22782,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw=\""
+          "Value": "\"z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 09:12:43 GMT"
+          "Value": "Fri, 06 Dec 2024 08:40:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22392,7 +22804,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-C6zmWnXU43fp9X96gvzwxu4ZTR216QGNUevUxVvdOZw="
+          "Value": "sha256-z0W1N5PYyW8viySsEMTf/5j2zsriLLy/UIElKaLzJbQ="
         }
       ]
     }

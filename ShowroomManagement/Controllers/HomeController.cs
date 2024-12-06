@@ -18,7 +18,7 @@ public class HomeController : Controller
     }
 
 
-
+    [Authorize]
     public IActionResult Index()
     {
         var data = _context.Vehicles.ToList(); // Lấy danh sách xe từ cơ sở dữ liệu
@@ -31,6 +31,7 @@ public class HomeController : Controller
 
 
 
+    [AllowAnonymous]
     public IActionResult Privacy()
     {
         return View();
@@ -46,5 +47,10 @@ public class HomeController : Controller
     public class VehicleController : Controller
     {
 
+    }
+     public IActionResult CreateVehicle()
+    {
+        var vehicle = new Vehicle(); // Tạo một đối tượng Vehicle mới
+        return View(vehicle); // Trả về view với mô hình Vehicle
     }
 }

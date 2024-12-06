@@ -40,15 +40,17 @@ namespace ShowroomManagement.Controllers
         }
 
         // GET: Vehicle/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null) return NotFound();
+            var vehicle = _context.Vehicles.FirstOrDefault(v => v.Id == id);
+            if (vehicle == null)
+            {
+                return NotFound();
+            }
 
-            var vehicle = await _context.Vehicles.FirstOrDefaultAsync(m => m.Id == id);
-            if (vehicle == null) return NotFound();
-
-            return View(vehicle);
+            return View(vehicle); // Đảm bảo truyền đúng kiểu `Vehicle`
         }
+
 
         // GET: Vehicle/Create
         public IActionResult Create()
@@ -57,30 +59,55 @@ namespace ShowroomManagement.Controllers
         }
 
         // POST: Vehicle/Create
+        // POST: Vehicle/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ModelNo, Name, Brand, Price, Status")] Vehicle vehicle)
+        public async Task<IActionResult> Create(VehicleViewModel model)
         {
             if (ModelState.IsValid)
             {
+                string? imagePath = null;
+
+                if (model.Image != null && model.Image.Length > 0)
+                {
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/vehicles");
+                    if (!Directory.Exists(uploadsFolder))
+                    {
+                        Directory.CreateDirectory(uploadsFolder);
+                    }
+
+                    var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(model.Image.FileName)}";
+                    var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await model.Image.CopyToAsync(stream);
+                    }
+
+                    imagePath = $"/images/vehicles/{uniqueFileName}";
+                }
+
+#pragma warning disable CS8601 // Possible null reference assignment.
+                var vehicle = new Vehicle
+                {
+                    Name = model.Name,
+                    Brand = model.Brand,
+                    ModelNo = model.ModelNo,
+                    Price = model.Price,
+                    Status = model.Status,
+                    ImagePath = imagePath  // Lưu đường dẫn ảnh vào DB
+                };
+#pragma warning restore CS8601 // Possible null reference assignment.
+
                 _context.Vehicles.Add(vehicle);
                 await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Vehicle added successfully!";
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(vehicle);
+
+            return View(model);
         }
 
-        // GET: Vehicle/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var vehicle = await _context.Vehicles.FindAsync(id);
-            if (vehicle == null) return NotFound();
-
-            return View(vehicle);
-        }
 
         // POST: Vehicle/Edit/5
         [HttpPost]
@@ -107,6 +134,7 @@ namespace ShowroomManagement.Controllers
             return View(vehicle);
         }
 
+
         // GET: Vehicle/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -124,12 +152,20 @@ namespace ShowroomManagement.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var vehicle = await _context.Vehicles.FindAsync(id);
-            if (vehicle != null) _context.Vehicles.Remove(vehicle);
+            if (vehicle != null)
+            {
+                _context.Vehicles.Remove(vehicle);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Vehicle deleted successfully!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Vehicle not found!";
+            }
 
-            await _context.SaveChangesAsync();
-            TempData["SuccessMessage"] = "Vehicle deleted successfully!";
             return RedirectToAction(nameof(Index));
         }
+
 
         // Báo cáo tồn kho
         public IActionResult InventoryReport(string status = "All")

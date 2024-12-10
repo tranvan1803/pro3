@@ -1471,8 +1471,8 @@
       ]
     },
     {
-      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
-      "AssetFile": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Route": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
+      "AssetFile": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1497,7 +1497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+          "Value": "Tue, 10 Dec 2024 16:08:53 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1508,8 +1508,8 @@
       ]
     },
     {
-      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.o1v5idme12.jpg",
-      "AssetFile": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Route": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.o1v5idme12.jpg",
+      "AssetFile": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1534,7 +1534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+          "Value": "Tue, 10 Dec 2024 16:08:53 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1548,7 +1548,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+          "Value": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg"
         }
       ]
     },
@@ -1631,6 +1631,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "AssetFile": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:02:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.o1v5idme12.jpg",
+      "AssetFile": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:02:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1v5idme12"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg"
         }
       ]
     },

@@ -48,6 +48,8 @@ public class AccountController : Controller
 
                 if (result.Succeeded)
                 {
+                    // Lưu avatar vào TempData để sử dụng trong layout view
+                    TempData["AvatarUrl"] = avatarUrl;
                     TempData["SuccessMessage"] = "Login successful!";
                     return RedirectToLocal(returnUrl);
                 }
@@ -62,7 +64,6 @@ public class AccountController : Controller
 
         return View(model);
     }
-
 
     // GET: /Account/Register
     [HttpGet]
@@ -136,7 +137,6 @@ public class AccountController : Controller
         TempData["ErrorMessage"] = "Registration failed. Please correct the errors and try again.";
         return View(model);
     }
-
 
     // POST: /Account/Logout
     [HttpPost]

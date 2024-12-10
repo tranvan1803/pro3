@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mCDgx1bK9lYhPXBCOcElXITe2M9K5g9pmxYvH4co8KQ=",
+  "Hash": "ao52DeS8sHD/3o3FPH20iFyyFUYBq+0d/+DFM+LdsEA=",
   "Source": "ShowroomManagement",
   "BasePath": "_content/ShowroomManagement",
   "Mode": "Default",
@@ -1592,12 +1592,12 @@
       "OriginalItemSpec": "wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png"
     },
     {
-      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "SourceId": "ShowroomManagement",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
       "BasePath": "_content/ShowroomManagement",
-      "RelativePath": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1610,7 +1610,7 @@
       "Integrity": "lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg"
     },
     {
       "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
@@ -1632,6 +1632,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png"
+    },
+    {
+      "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "SourceId": "ShowroomManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\project_III\\ShowroomManagement\\wwwroot\\",
+      "BasePath": "_content/ShowroomManagement",
+      "RelativePath": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o1v5idme12",
+      "Integrity": "lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg"
     },
     {
       "Identity": "D:\\project_III\\ShowroomManagement\\wwwroot\\js\\site.js",
@@ -4087,8 +4108,8 @@
       ]
     },
     {
-      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Route": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4109,7 +4130,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+          "Value": "Tue, 10 Dec 2024 16:08:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4124,8 +4145,8 @@
       ]
     },
     {
-      "Route": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.o1v5idme12.jpg",
-      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg",
+      "Route": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.o1v5idme12.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4146,7 +4167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 13:36:24 GMT"
+          "Value": "Tue, 10 Dec 2024 16:08:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4160,7 +4181,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/vehicles/99013f68-123c-4a5a-8fcd-f8a12912763b_ferrari-1.jpg"
+          "Value": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg"
         },
         {
           "Name": "integrity",
@@ -4247,6 +4268,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-8SVEi//kW+Xm12s+/IQ6MMm1+S5DAmBLs+THwimrHIQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.o1v5idme12.jpg",
+      "AssetFile": "D:\\project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4241420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:02:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o1v5idme12"
+        },
+        {
+          "Name": "label",
+          "Value": "images/vehicles/ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE1Y2GfKLg6d5eibeQSp+U2zcl1nDip6U2frQ8xRuOo="
         }
       ]
     },

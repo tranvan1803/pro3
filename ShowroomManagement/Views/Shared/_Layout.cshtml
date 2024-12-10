@@ -5,24 +5,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ShowroomManagement</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!-- Kết nối với file CSS của bạn -->
+    <link rel="stylesheet" href="D:/project_III/ShowroomManagement/Views/Shared/_Layout.cshtml.css" />
+
     <style>
-        .welcome-section {
+        /* CSS bo tròn ảnh */
+        .user-avatar {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover; /* Đảm bảo ảnh không bị méo */
+        }
+
+        /* CSS để căn chỉnh ảnh và chữ "Welcome" hoặc "Admin" */
+        .navbar-nav .nav-item .nav-link {
             display: flex;
             align-items: center;
         }
 
-        .welcome-section img {
-            margin-left: 10px;
-            border-radius: 50%;
+        .navbar-nav .nav-item .nav-link span {
+            margin-right: 10px; /* Cách khoảng giữa chữ và ảnh */
         }
     </style>
 </head>
 
 <body>
+    @if (!User.Identity?.IsAuthenticated == true)
+    {
+        <script>
+            window.location.href = '@Url.Action("Login", "Account")';  // Chuyển hướng về trang login nếu chưa đăng nhập
+        </script>
+    }
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom mb-3">
             <div class="container-fluid">
@@ -33,16 +50,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <!-- Hiển thị avatar và dòng chào mừng khi đã đăng nhập -->
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <li class="nav-item welcome-section">
-                                <span class="nav-link text-primary">
-                                    Welcome, @User.Identity.Name
+                                <span class="nav-link text-primary d-flex align-items-center">
+                                    <span>Welcome, @User.Identity.Name</span>
+                                    <img src="@User.Claims.FirstOrDefault(c => c.Type == "Avatar")?.Value ?? "/images/default-avatar.png""
+                                        alt="Avatar" class="user-avatar" 
+                                        onerror="this.src='/images/default-avatar.png'" />
                                 </span>
-                                <img src="@User.Claims.FirstOrDefault(c => c.Type == "Avatar")?.Value ?? "/images/default-avatar.png""
-                                    alt="Avatar" width="40" height="40" 
-                                    onerror="this.src='/images/default-avatar.png'" />
                             </li>
                             <li class="nav-item">
                                 <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
@@ -52,7 +68,6 @@
                         }
                         else
                         {
-                            <!-- Hiển thị Login/Register khi chưa đăng nhập -->
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
                             </li>
@@ -60,7 +75,6 @@
                                 <a class="nav-link" asp-controller="Account" asp-action="Register">Register</a>
                             </li>
                         }
-                        <!-- Hiển thị Admin Dashboard nếu là Admin -->
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
@@ -75,7 +89,6 @@
 
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <!-- Sidebar -->
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -107,62 +120,26 @@
                                 <i class="fs-4 bi-gear"></i> <span class="ms-1 d-none d-sm-inline">Settings</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/VehicleRegistration" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-card-checklist"></i> <span class="ms-1 d-none d-sm-inline">Vehicle Registrations</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Main Content -->
             <div class="col py-3">
-                <!-- Display success and error messages -->
-                @if (TempData["SuccessMessage"] != null)
-                {
-                    <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMessage">
-                        @TempData["SuccessMessage"]
-                    </div>
-                }
-                @if (TempData["ErrorMessage"] != null)
-                {
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="errorMessage">
-                        @TempData["ErrorMessage"]
-                    </div>
-                }
-
-                <main role="main" class="pb-3">
-                    @RenderBody()
-                </main>
+                @RenderBody() <!-- Nội dung của các view sẽ được render tại đây -->
             </div>
         </div>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - ShowroomManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - ShowroomManagement
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JavaScript to hide the success or error message after 3 seconds -->
-    <script type="text/javascript">
-        setTimeout(function () {
-            var successMessage = document.getElementById("successMessage");
-            var errorMessage = document.getElementById("errorMessage");
-            if (successMessage) {
-                successMessage.style.display = "none";
-            }
-            if (errorMessage) {
-                errorMessage.style.display = "none";
-            }
-        }, 3000); // 3000 ms = 3 seconds
-    </script>
-
-    @await RenderSectionAsync("Scripts", required: false)
+    <!-- Đảm bảo render các scripts nếu có -->
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>

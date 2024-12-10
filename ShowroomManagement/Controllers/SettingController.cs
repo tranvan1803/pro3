@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShowroomManagement.Data;
 using ShowroomManagement.Models;
+
 
 public class SettingController : Controller
 {
@@ -34,4 +36,56 @@ public class SettingController : Controller
         }
         return View(setting);
     }
+    // GET: Setting/Edit/5
+    public IActionResult Edit(int id)
+    {
+        var setting = _context.Settings.Find(id);
+        if (setting == null)
+        {
+            return NotFound(); // Nếu không tìm thấy Setting theo ID
+        }
+
+        return View(setting); // Trả về view với đối tượng setting
+    }
+
+    // POST: Setting/Edit/5
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, Setting setting)
+    {
+        if (id != setting.Id)
+        {
+            return NotFound(); // Nếu ID không khớp, trả về lỗi
+        }
+
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                _context.Update(setting); // Cập nhật Setting
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Setting updated successfully!";
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!SettingExists(setting.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index)); // Quay lại trang danh sách
+        }
+        return View(setting); // Trả về form chỉnh sửa nếu có lỗi
+    }
+
+    // Kiểm tra nếu Setting tồn tại trong DB
+    private bool SettingExists(int id)
+    {
+        return _context.Settings.Any(e => e.Id == id);
+    }
+
 }

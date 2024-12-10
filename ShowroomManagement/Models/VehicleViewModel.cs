@@ -21,5 +21,6 @@ namespace ShowroomManagement.Models
         public string? ImagePath { get; set; }
         [Display(Name = "Vehicle Image")]
         public IFormFile? Image { get; set; }
+        public int Id { get; internal set; }
     }
 }

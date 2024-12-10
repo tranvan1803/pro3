@@ -17,7 +17,9 @@
                 <td>@setting.Key</td>
                 <td>@setting.Value</td>
                 <td>
-                    <!-- Add Edit/Delete buttons if needed -->
+                    <!-- Edit button -->
+                    <a asp-action="Edit" asp-route-id="@setting.Id" class="btn btn-warning">Edit</a>
+                    <!-- You can add Delete button here if needed -->
                 </td>
             </tr>
         }

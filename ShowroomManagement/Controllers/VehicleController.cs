@@ -1,25 +1,27 @@
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using ShowroomManagement.Data;
 using ShowroomManagement.Models;
 using X.PagedList.Extensions;
-using System.IO;
 
 namespace ShowroomManagement.Controllers
 {
+    [Authorize]
     public class VehicleController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _environment;
 
-        public VehicleController(ApplicationDbContext context)
+        public VehicleController(ApplicationDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // GET: Vehicle
@@ -48,9 +50,8 @@ namespace ShowroomManagement.Controllers
                 return NotFound();
             }
 
-            return View(vehicle); // Đảm bảo truyền đúng kiểu `Vehicle`
+            return View(vehicle);
         }
-
 
         // GET: Vehicle/Create
         public IActionResult Create()
@@ -58,7 +59,6 @@ namespace ShowroomManagement.Controllers
             return View();
         }
 
-        // POST: Vehicle/Create
         // POST: Vehicle/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -68,9 +68,10 @@ namespace ShowroomManagement.Controllers
             {
                 string? imagePath = null;
 
+                // Handle Image Upload
                 if (model.Image != null && model.Image.Length > 0)
                 {
-                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/vehicles");
+                    var uploadsFolder = Path.Combine(_environment.WebRootPath, "images/vehicles");
                     if (!Directory.Exists(uploadsFolder))
                     {
                         Directory.CreateDirectory(uploadsFolder);
@@ -95,7 +96,7 @@ namespace ShowroomManagement.Controllers
                     ModelNo = model.ModelNo,
                     Price = model.Price,
                     Status = model.Status,
-                    ImagePath = imagePath  // Lưu đường dẫn ảnh vào DB
+                    ImagePath = imagePath // Store image path in DB
                 };
 #pragma warning restore CS8601 // Possible null reference assignment.
 
@@ -108,30 +109,80 @@ namespace ShowroomManagement.Controllers
             return View(model);
         }
 
+        // GET: Vehicle/Edit/5
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var vehicle = _context.Vehicles.Find(id);  // Lấy xe theo ID
+            if (vehicle == null)
+            {
+                return NotFound();  // Nếu không tìm thấy xe, trả về lỗi 404
+            }
+            return View(vehicle);  // Trả về view Edit với đối tượng xe
+        }
+
 
         // POST: Vehicle/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id, ModelNo, Name, Brand, Price, Status")] Vehicle vehicle)
+        public async Task<IActionResult> Edit(int id, Vehicle vehicle, IFormFile? newImage)
         {
-            if (id != vehicle.Id) return NotFound();
+            if (id != vehicle.Id)
+            {
+                return NotFound();  // Nếu ID trong URL không khớp với ID của phương tiện
+            }
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(vehicle);
+                    if (newImage != null && newImage.Length > 0)
+                    {
+                        // Nếu có ảnh mới, lưu ảnh vào thư mục và cập nhật đường dẫn
+                        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/vehicles");
+                        if (!Directory.Exists(uploadsFolder))
+                        {
+                            Directory.CreateDirectory(uploadsFolder);
+                        }
+
+                        var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(newImage.FileName)}";
+                        var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await newImage.CopyToAsync(stream);
+                        }
+
+                        // Cập nhật đường dẫn ảnh vào cơ sở dữ liệu
+                        vehicle.ImagePath = $"/images/vehicles/{uniqueFileName}";
+                    }
+
+                    // Nếu không có ảnh mới, giữ lại ảnh cũ từ cơ sở dữ liệu
+                    else if (vehicle.ImagePath == null)
+                    {
+                        vehicle.ImagePath = _context.Vehicles.Where(v => v.Id == vehicle.Id)
+                                                              .Select(v => v.ImagePath)
+                                                              .FirstOrDefault();
+                    }
+
+                    _context.Update(vehicle);  // Cập nhật thông tin phương tiện
                     await _context.SaveChangesAsync();
                     TempData["SuccessMessage"] = "Vehicle updated successfully!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VehicleExists(vehicle.Id)) return NotFound();
-                    else throw;
+                    if (!VehicleExists(vehicle.Id))  // Kiểm tra nếu phương tiện không tồn tại
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));  // Quay lại trang danh sách sau khi lưu thành công
             }
-            return View(vehicle);
+            return View(vehicle);  // Trả về lại form chỉnh sửa nếu có lỗi
         }
 
 
@@ -154,6 +205,16 @@ namespace ShowroomManagement.Controllers
             var vehicle = await _context.Vehicles.FindAsync(id);
             if (vehicle != null)
             {
+                // Delete the image file if it exists
+                if (!string.IsNullOrEmpty(vehicle.ImagePath))
+                {
+                    var filePath = Path.Combine(_environment.WebRootPath, vehicle.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
                 _context.Vehicles.Remove(vehicle);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Vehicle deleted successfully!";
@@ -165,7 +226,6 @@ namespace ShowroomManagement.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
 
         // Báo cáo tồn kho
         public IActionResult InventoryReport(string status = "All")

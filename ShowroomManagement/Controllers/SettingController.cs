@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using ShowroomManagement.Data;
 using ShowroomManagement.Models;
 
-
 public class SettingController : Controller
 {
     private readonly ApplicationDbContext _context;
@@ -36,6 +35,7 @@ public class SettingController : Controller
         }
         return View(setting);
     }
+
     // GET: Setting/Edit/5
     public IActionResult Edit(int id)
     {
@@ -82,10 +82,40 @@ public class SettingController : Controller
         return View(setting); // Trả về form chỉnh sửa nếu có lỗi
     }
 
+    // GET: Setting/Delete/5
+    public IActionResult Delete(int id)
+    {
+        var setting = _context.Settings.Find(id);
+        if (setting == null)
+        {
+            TempData["ErrorMessage"] = "Setting not found!";
+            return RedirectToAction(nameof(Index));
+        }
+
+        return View(setting); // Optional: Return a confirmation page for delete.
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteConfirmed(int id)
+    {
+        var setting = _context.Settings.Find(id);
+        if (setting == null)
+        {
+            TempData["ErrorMessage"] = "Setting not found!";
+            return RedirectToAction(nameof(Index));
+        }
+
+        _context.Settings.Remove(setting);
+        _context.SaveChanges();
+        TempData["SuccessMessage"] = "Setting deleted successfully!";
+        return RedirectToAction(nameof(Index));
+    }
+
+
     // Kiểm tra nếu Setting tồn tại trong DB
     private bool SettingExists(int id)
     {
         return _context.Settings.Any(e => e.Id == id);
     }
-
 }

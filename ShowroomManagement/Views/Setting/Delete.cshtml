@@ -1,0 +1,17 @@
+@model ShowroomManagement.Models.Setting
+
+<h2>Delete Setting</h2>
+
+<div class="alert alert-danger">
+    <h4>Are you sure you want to delete this setting?</h4>
+    <p>
+        <strong>Key:</strong> @Model.Key<br />
+        <strong>Value:</strong> @Model.Value
+    </p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

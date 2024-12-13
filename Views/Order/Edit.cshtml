@@ -1,0 +1,55 @@
+@model ShowroomManagement.Models.OrderCreateViewModel
+
+<div class="container mt-4">
+    <h2 class="text-center">Edit Order</h2>
+
+    <form asp-action="Edit" method="post">
+        <!-- Vehicle Selection -->
+        <div class="form-group">
+            <label asp-for="VehicleId" class="control-label">Vehicle</label>
+            <select asp-for="VehicleId" class="form-control" asp-items="Model.Vehicles"></select>
+            <span asp-validation-for="VehicleId" class="text-danger"></span>
+        </div>
+
+        <!-- Customer Selection -->
+        <div class="form-group">
+            <label asp-for="CustomerId" class="control-label">Customer</label>
+            <select asp-for="CustomerId" class="form-control" asp-items="Model.Customers"></select>
+            <span asp-validation-for="CustomerId" class="text-danger"></span>
+        </div>
+
+        <!-- Order Date -->
+        <div class="form-group">
+            <label asp-for="OrderDate" class="control-label">Order Date</label>
+            <input asp-for="OrderDate" class="form-control" type="date" />
+            <span asp-validation-for="OrderDate" class="text-danger"></span>
+        </div>
+
+        <!-- Total Price -->
+        <div class="form-group">
+            <label asp-for="TotalPrice" class="control-label">Total Price</label>
+            <input asp-for="TotalPrice" class="form-control" type="number" step="0.01" />
+            <span asp-validation-for="TotalPrice" class="text-danger"></span>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="form-group">
+            <label asp-for="PaymentMethod" class="control-label">Payment Method</label>
+            <select asp-for="PaymentMethod" asp-items="Html.GetEnumSelectList<ShowroomManagement.Models.PaymentMethod>()" class="form-control">
+                <!-- Tự động tạo danh sách các phương thức thanh toán từ enum -->
+            </select>
+            <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+        </div>
+
+        <!-- Submit and Cancel Buttons -->
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-primary btn-lg">Save</button>
+            <a asp-action="Index" class="btn btn-secondary btn-lg">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@* @section Scripts {
+    <!-- Script để hỗ trợ validation client-side -->
+    @await Html.RenderPartialAsync("_ValidationScriptsPartial")
+} *@

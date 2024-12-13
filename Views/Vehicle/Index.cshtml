@@ -1,0 +1,81 @@
+@model IEnumerable<ShowroomManagement.Models.Vehicle>
+
+<div class="container mt-4">
+    <h1 class="text-center text-primary">Manage Vehicles</h1>
+    <hr class="mb-4" />
+
+    <!-- Nút thêm phương tiện mới -->
+    <div class="d-flex justify-content-end mb-4">
+        <a href="@Url.Action("Create", "Vehicle")" class="btn btn-success shadow-sm d-flex align-items-center">
+            <i class="bi bi-plus-circle me-2"></i> Add New Vehicle
+        </a>
+    </div>
+
+    <!-- Bảng phương tiện -->
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped align-middle table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th class="text-center">Image</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="border-bottom">
+                        <td class="text-center">
+                            <img src="@item.ImagePath" alt="@item.Name" width="100" class="img-thumbnail"
+                                 onerror="this.src='/images/default-car.png'" />
+                        </td>
+                        <td class="fw-bold">@item.Name</td>
+                        <td>@item.Brand</td>
+                        <td>@item.Price.ToString("C")</td>
+                        <td>
+                            <div class="d-flex gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning shadow-sm">
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info shadow-sm">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger shadow-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+</style>
+
+

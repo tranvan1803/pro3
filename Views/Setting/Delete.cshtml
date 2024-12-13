@@ -1,0 +1,36 @@
+@model ShowroomManagement.Models.Setting
+
+<div class="container mt-5">
+    <!-- Tiêu đề -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-danger">Delete Setting</h2>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to List
+        </a>
+    </div>
+
+    <!-- Cảnh báo xóa -->
+    <div class="alert alert-danger">
+        <h4><i class="bi bi-exclamation-circle"></i> Are you sure you want to delete this setting?</h4>
+        <p>
+            <strong>Key:</strong> @Model.Key<br />
+            <strong>Value:</strong> @Model.Value
+        </p>
+    </div>
+
+    <!-- Form xác nhận xóa -->
+    <form asp-action="DeleteConfirmed" method="post">
+        <!-- Thêm input hidden để truyền Id của setting -->
+        <input type="hidden" asp-for="Id" />
+        
+        <!-- Các nút hành động -->
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Delete
+            </button>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-x-circle"></i> Cancel
+            </a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+@model ShowroomManagement.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center text-info mb-4">Customer Details</h1>
+
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <h4 class="card-title text-secondary text-center">Details for @Model.Name</h4>
+            <hr />
+            <dl class="row">
+                <!-- Name -->
+                <dt class="col-sm-4 fw-bold text-secondary">Name</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <!-- Address -->
+                <dt class="col-sm-4 fw-bold text-secondary">Address</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <!-- Phone Number -->
+                <dt class="col-sm-4 fw-bold text-secondary">Phone Number</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.PhoneNumber)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-4 d-flex justify-content-center">
+        <!-- Edit Button -->
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning me-2">
+            <i class="bi bi-pencil-square"></i> Edit
+        </a>
+        <!-- Back to List Button -->
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to List
+        </a>
+    </div>
+</div>

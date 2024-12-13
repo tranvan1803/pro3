@@ -1,0 +1,36 @@
+@model ShowroomManagement.Models.VehicleRegistration
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Vehicle Registration Details</h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th class="text-end" style="width: 30%;">Vehicle:</th>
+                        <td>@Model.Vehicle?.Name</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Registration Number:</th>
+                        <td>@Model.RegistrationNumber</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Registration Date:</th>
+                        <td>@Model.RegistrationDate.ToShortDateString()</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Owner Name:</th>
+                        <td>@Model.OwnerName</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer text-end">
+            <a class="btn btn-secondary" onclick="window.history.back();">
+                <i class="bi bi-arrow-left"></i> Go Back
+            </a>
+        </div>
+    </div>
+</div>

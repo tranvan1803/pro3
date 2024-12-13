@@ -1,0 +1,87 @@
+@model ShowroomManagement.Models.Vehicle
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">
+                <i class="bi bi-info-circle-fill me-2"></i>Vehicle Details
+            </h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Phần hình ảnh -->
+                <div class="col-md-4 text-center">
+                    <img src="@Model.ImagePath" alt="@Model.Name" class="img-fluid rounded shadow"
+                         onerror="this.src='/images/default-car.png'" 
+                         style="max-height: 250px; width: auto;" />
+                </div>
+                <!-- Phần thông tin chi tiết -->
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">
+                            <i class="bi bi-pencil-square me-1"></i>Name
+                        </dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4 fw-bold">
+                            <i class="bi bi-building me-1"></i>Brand
+                        </dt>
+                        <dd class="col-sm-8">@Model.Brand</dd>
+
+                        <dt class="col-sm-4 fw-bold">
+                            <i class="bi bi-tags me-1"></i>Model Number
+                        </dt>
+                        <dd class="col-sm-8">@Model.ModelNo</dd>
+
+                        <dt class="col-sm-4 fw-bold">
+                            <i class="bi bi-currency-dollar me-1"></i>Price
+                        </dt>
+                        <dd class="col-sm-8 text-success fw-bold">@Model.Price.ToString("C")</dd>
+
+                        <dt class="col-sm-4 fw-bold">
+                            <i class="bi bi-check-circle me-1"></i>Status
+                        </dt>
+                        <dd class="col-sm-8">
+                            @if (Model.Status == "Available")
+                            {
+                                <span class="badge bg-success">Available</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Sold</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <a href="@Url.Action("Index", "Vehicle")" class="btn btn-secondary shadow-sm">
+                <i class="bi bi-arrow-left-circle me-1"></i>Back to Vehicles
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-header {
+        background: linear-gradient(90deg, #007bff, #6610f2);
+    }
+
+    .card {
+        border-radius: 12px;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>

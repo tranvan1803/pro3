@@ -1,0 +1,50 @@
+@model ShowroomManagement.Models.Customer
+
+@{
+    ViewData["Title"] = "Delete Customer";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center text-danger mb-4">Delete Customer</h1>
+
+    <div class="card shadow-lg border-danger">
+        <div class="card-body">
+            <h4 class="text-center text-secondary">Are you sure you want to delete this customer?</h4>
+            <hr />
+            <dl class="row">
+                <!-- Name -->
+                <dt class="col-sm-4 fw-bold text-secondary">Name</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <!-- Address -->
+                <dt class="col-sm-4 fw-bold text-secondary">Address</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <!-- Phone Number -->
+                <dt class="col-sm-4 fw-bold text-secondary">Phone Number</dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.PhoneNumber)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-4 d-flex justify-content-center">
+        <!-- Delete Form -->
+        <form asp-action="Delete" class="me-2">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Confirm Delete
+            </button>
+        </form>
+
+        <!-- Back to List Button -->
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Cancel
+        </a>
+    </div>
+</div>

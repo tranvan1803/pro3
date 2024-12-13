@@ -1,0 +1,75 @@
+@model ShowroomManagement.Models.Customer
+
+@{
+    ViewData["Title"] = "Create Customer";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Create Customer</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title text-secondary text-center">New Customer</h4>
+                    <hr />
+                    <form asp-action="Create">
+                        <!-- Displaying validation errors -->
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" style="display:none;"></div>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-bold">Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter customer name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label fw-bold">Address</label>
+                            <input asp-for="Address" class="form-control" placeholder="Enter customer address" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label fw-bold">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-save"></i> Create Customer
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Back to List Button -->
+            <div class="mt-3 text-center">
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<!-- JavaScript to show validation errors -->
+<script>
+    // Ensure that validation summary is shown when validation errors occur
+    $(document).ready(function() {
+        if ($(".text-danger").length > 0) {
+            $(".alert-danger").show();
+        } else {
+            $(".alert-danger").hide();
+        }
+    });
+</script>

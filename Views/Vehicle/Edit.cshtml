@@ -1,0 +1,91 @@
+@model ShowroomManagement.Models.Vehicle
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Edit Vehicle</h3>
+                </div>
+                <div class="card-body bg-light">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="Id" />
+                        
+                        <!-- Hình ảnh hiện tại -->
+                        <div class="text-center mb-4">
+                            <img src="@Model.ImagePath" alt="@Model.Name" class="img-thumbnail"
+                                 onerror="this.src='/images/default-car.png'" 
+                                 style="max-height: 200px;" />
+                        </div>
+                        
+                        <!-- Model No -->
+                        <div class="mb-3">
+                            <label asp-for="ModelNo" class="form-label fw-bold">Model No</label>
+                            <input asp-for="ModelNo" class="form-control" placeholder="Enter model number" />
+                        </div>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-bold">Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter vehicle name" />
+                        </div>
+
+                        <!-- Brand -->
+                        <div class="mb-3">
+                            <label asp-for="Brand" class="form-label fw-bold">Brand</label>
+                            <input asp-for="Brand" class="form-control" placeholder="Enter brand" />
+                        </div>
+
+                        <!-- Price -->
+                        <div class="mb-3">
+                            <label asp-for="Price" class="form-label fw-bold">Price ($)</label>
+                            <input asp-for="Price" class="form-control" placeholder="Enter price" />
+                        </div>
+
+                        <!-- Status -->
+                        <div class="mb-3">
+                            <label asp-for="Status" class="form-label fw-bold">Status</label>
+                            <select asp-for="Status" class="form-select">
+                                <option value="Available" selected="@Model.Status == "Available"">Available</option>
+                                <option value="Sold" selected="@Model.Status == "Sold"">Sold</option>
+                            </select>
+                        </div>
+
+                        <!-- Nút -->
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary shadow-sm">
+                                <i class="bi bi-save me-1"></i> Save Changes
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary shadow-sm">
+                                <i class="bi bi-arrow-left-circle me-1"></i> Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-header {
+        background: linear-gradient(90deg, #007bff, #6610f2);
+    }
+
+    .form-control, .form-select {
+        border-radius: 8px;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>

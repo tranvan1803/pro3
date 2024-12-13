@@ -1,0 +1,30 @@
+@model IEnumerable<ShowroomManagement.Models.VehicleRegistration>
+
+<h2>Vehicle Registrations</h2>
+
+<a asp-action="Create" class="btn btn-primary">Register a Vehicle</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Vehicle</th>
+            <th>Registration Number</th>
+            <th>Registration Date</th>
+            <th>Owner Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Vehicle?.Name</td>
+                <td>@item.RegistrationNumber</td>
+                <td>@item.RegistrationDate.ToShortDateString()</td>
+                <td>@item.OwnerName</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

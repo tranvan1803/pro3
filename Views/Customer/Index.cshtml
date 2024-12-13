@@ -1,0 +1,52 @@
+@model IEnumerable<ShowroomManagement.Models.Customer>
+
+@{
+    ViewData["Title"] = "Customer List";
+}
+
+<div class="container">
+    <!-- Tiêu đề và nút tạo mới -->
+    <div class="d-flex justify-content-between align-items-center my-4">
+        <h1 class="text-primary">Customer List</h1>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Create New
+        </a>
+    </div>
+
+    <!-- Bảng hiển thị dữ liệu -->
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Address)</th>
+                    <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PhoneNumber)</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                        <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" title="Edit Customer">
+                                <i class="bi bi-pencil-square"></i> 
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm" title="View Details">
+                                <i class="bi bi-info-circle"></i> 
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" title="Delete Customer" 
+                               onclick="return confirm('Are you sure you want to delete this customer?');">
+                                <i class="bi bi-trash"></i> 
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,67 @@
+@model ShowroomManagement.Models.OrderCreateViewModel
+
+@{
+    ViewData["Title"] = "Create Order";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="VehicleId" class="control-label">Vehicle</label>
+        <select asp-for="VehicleId" class="form-control" asp-items="ViewBag.VehicleId">
+            <option value="">-- Select Vehicle --</option>
+        </select>
+        <span asp-validation-for="VehicleId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CustomerId" class="control-label">Customer</label>
+        <select asp-for="CustomerId" class="form-control" asp-items="ViewBag.CustomerId">
+            <option value="">-- Select Customer --</option>
+        </select>
+        <span asp-validation-for="CustomerId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="OrderDate" class="control-label">Order Date</label>
+        <input asp-for="OrderDate" class="form-control" type="date" />
+        <span asp-validation-for="OrderDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TotalPrice" class="control-label">Total Price</label>
+        <input asp-for="TotalPrice" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="TotalPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PaymentMethod" class="control-label">Payment Method</label>
+        <select asp-for="PaymentMethod" class="form-control">
+            <option value="">-- Select Payment Method --</option>
+            <option value="Cash">Cash</option>
+            <option value="BankTransfer">Bank Transfer</option>
+            <option value="Paypal">Paypal</option>
+        </select>
+        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+    </div>
+
+    <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary btn-lg">
+            <i class="bi bi-check-circle"></i> Create Order
+        </button>
+    </div>
+</form>
+
+<!-- Quay lại danh sách đơn hàng -->
+<div class="text-center mt-4">
+    <a asp-action="Index" class="btn btn-secondary btn-lg">
+        <i class="bi bi-arrow-left"></i> Back to List
+    </a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -615,3 +615,4 @@ D:\T2307A\project_III\ShowroomManagement\obj\Debug\net9.0\refint\ShowroomManagem
 D:\T2307A\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.pdb
 D:\T2307A\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.genruntimeconfig.cache
 D:\T2307A\project_III\ShowroomManagement\obj\Debug\net9.0\ref\ShowroomManagement.dll
+D:\T2307A\project_III\ShowroomManagement\obj\Debug\net9.0\ShowroomManagement.sourcelink.json

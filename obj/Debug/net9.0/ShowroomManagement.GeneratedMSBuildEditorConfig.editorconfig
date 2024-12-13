@@ -28,6 +28,202 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEFjY291bnRcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEFjY291bnRcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEFjY291bnRcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEFkbWluXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/CreateCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXENyZWF0ZUN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEN1c3RvbWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/InventoryReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXEludmVudG9yeVJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Orderontroller/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyb250cm9sbGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Orderontroller/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyb250cm9sbGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Orderontroller/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyb250cm9sbGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Orderontroller/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyb250cm9sbGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Orderontroller/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyb250cm9sbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/Invoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXEludm9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/SalesChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXFNhbGVzQ2hhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Order/SalesReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXE9yZGVyXFNhbGVzUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/SalesReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNhbGVzUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Setting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNldHRpbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Setting/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNldHRpbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Setting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNldHRpbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Setting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNldHRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Shared/_GoBackButton.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNoYXJlZFxfR29CYWNrQnV0dG9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNoYXJlZFxfTG9naW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/VehicleRegistration/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVSZWdpc3RyYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/VehicleRegistration/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVSZWdpc3RyYXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/VehicleRegistration/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVSZWdpc3RyYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/CreateVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcQ3JlYXRlVmVoaWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/InventoryChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcSW52ZW50b3J5Q2hhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Vehicle/InventoryReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFZlaGljbGVcSW52ZW50b3J5UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/T2307A/project_III/ShowroomManagement/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -223,6 +419,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/T2307A/project_III/ShowroomManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[D:/T2307A/project_III/ShowroomManagement/ShowroomManagement/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = U2hvd3Jvb21NYW5hZ2VtZW50XFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-6o8xbw0gqg
 
 [D:/T2307A/project_III/ShowroomManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

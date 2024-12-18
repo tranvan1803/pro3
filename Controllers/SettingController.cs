@@ -58,7 +58,7 @@ namespace ShowroomManagement.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Setting setting)
         {
-            if (id != setting.Id)
+            if (id != setting.Id) 
             {
                 return NotFound(); // Nếu ID không khớp, trả về lỗi
             }

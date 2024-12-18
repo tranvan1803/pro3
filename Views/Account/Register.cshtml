@@ -1,9 +1,8 @@
 @model ShowroomManagement.Models.RegisterViewModel
 
-<head>
-    <link rel="stylesheet" href="~/css/Account.css" />
-</head>
-
+@{
+    Layout = "_AccountLayout";
+}
 
 <h2 class="text-center mb-4">Register</h2>
 
@@ -37,10 +36,10 @@
         <input asp-for="Avatar" type="file" class="form-control" />
     </div>
 
-    <div class="form-check mb-3">
+    @* <div class="form-check mb-3">
         <input asp-for="IsAdmin" class="form-check-input" type="checkbox" />
         <label asp-for="IsAdmin" class="form-check-label">Register as Admin</label>
-    </div>
+    </div> *@
 
     <button type="submit" class="btn btn-primary w-100">Register</button>
 </form>
@@ -55,3 +54,4 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+

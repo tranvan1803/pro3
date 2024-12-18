@@ -2,15 +2,36 @@
 
 <div class="container mt-5">
     <div class="card shadow">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-primary text-white text-center">
             <h2 class="mb-0">Vehicle Registration Details</h2>
         </div>
         <div class="card-body">
             <table class="table table-borderless">
                 <tbody>
+                    <!-- Thông tin xe -->
+                    <tr class="table-primary">
+                        <th colspan="2" class="text-center">Vehicle Information</th>
+                    </tr>
                     <tr>
                         <th class="text-end" style="width: 30%;">Vehicle:</th>
                         <td>@Model.Vehicle?.Name</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Color:</th>
+                        <td>@Model.Color</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Model:</th>
+                        <td>@Model.Model</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Make:</th>
+                        <td>@Model.Make</td>
+                    </tr>
+
+                    <!-- Thông tin đăng ký -->
+                    <tr class="table-secondary">
+                        <th colspan="2" class="text-center">Registration Information</th>
                     </tr>
                     <tr>
                         <th class="text-end">Registration Number:</th>
@@ -21,8 +42,33 @@
                         <td>@Model.RegistrationDate.ToShortDateString()</td>
                     </tr>
                     <tr>
+                        <th class="text-end">Registration Expiry Date:</th>
+                        <td>@Model.RegistrationExpiryDate?.ToShortDateString()</td>
+                    </tr>
+
+                    <!-- Thông tin chủ sở hữu -->
+                    <tr class="table-info">
+                        <th colspan="2" class="text-center">Owner Information</th>
+                    </tr>
+                    <tr>
                         <th class="text-end">Owner Name:</th>
                         <td>@Model.OwnerName</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Address:</th>
+                        <td>@Model.Address</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Phone Number:</th>
+                        <td>@Model.PhoneNumber</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Email:</th>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Ownership Type:</th>
+                        <td>@Model.OwnershipType</td>
                     </tr>
                 </tbody>
             </table>

@@ -38,6 +38,25 @@
                             <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                         </div>
 
+                        <!-- Age -->
+                        <div class="mb-3">
+                            <label asp-for="Age" class="form-label fw-bold">Age</label>
+                            <input asp-for="Age" class="form-control" placeholder="Enter customer age" type="number" />
+                            <span asp-validation-for="Age" class="text-danger"></span>
+                        </div>
+
+                        <!-- Gender -->
+                        <div class="mb-3">
+                            <label asp-for="Gender" class="form-label fw-bold">Gender</label>
+                            <select asp-for="Gender" class="form-control">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+
                         <!-- Submit Button -->
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">
@@ -59,13 +78,15 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
 
 <!-- JavaScript to show validation errors -->
 <script>
     // Ensure that validation summary is shown when validation errors occur
-    $(document).ready(function() {
+    $(document).ready(function () {
         if ($(".text-danger").length > 0) {
             $(".alert-danger").show();
         } else {

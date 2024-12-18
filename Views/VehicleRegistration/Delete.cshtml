@@ -1,0 +1,39 @@
+@model ShowroomManagement.Models.VehicleRegistration
+
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-danger text-white">
+            <h2 class="mb-0">Delete Vehicle Registration</h2>
+        </div>
+        <div class="card-body">
+            <p>Are you sure you want to delete this vehicle registration?</p>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <th class="text-end" style="width: 30%;">Vehicle:</th>
+                        <td>@Model.Vehicle?.Name</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Registration Number:</th>
+                        <td>@Model.RegistrationNumber</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Registration Date:</th>
+                        <td>@Model.RegistrationDate.ToShortDateString()</td>
+                    </tr>
+                    <tr>
+                        <th class="text-end">Owner Name:</th>
+                        <td>@Model.OwnerName</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger me-2">Delete</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShowroomManagement.Data;
 
@@ -11,9 +12,11 @@ using ShowroomManagement.Data;
 namespace ShowroomManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241216092247_AddAgeAndGenderToCustomer")]
+    partial class AddAgeAndGenderToCustomer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -353,42 +356,11 @@ namespace ShowroomManagement.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Color")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Make")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("OwnerName")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("OwnershipType")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<DateTime>("RegistrationDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("RegistrationExpiryDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("RegistrationNumber")

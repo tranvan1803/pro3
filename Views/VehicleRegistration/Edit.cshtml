@@ -3,10 +3,12 @@
 <div class="container mt-5">
     <div class="card shadow-lg">
         <div class="card-header bg-primary text-white text-center">
-            <h2>Register a Vehicle</h2>
+            <h2>Edit Vehicle Registration</h2>
         </div>
         <div class="card-body">
-            <form asp-action="Create" method="post">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+
                 <!-- Vehicle Information -->
                 <h5 class="text-primary">Vehicle Information</h5>
                 <hr />
@@ -45,29 +47,29 @@
                         <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
-                        <label asp-for="RegistrationDate" class="form-label">Registration Date</label>
-                        <input asp-for="RegistrationDate" type="date" class="form-control" />
-                        <span asp-validation-for="RegistrationDate" class="text-danger"></span>
-                    </div>
-                    <div class="col-md-6">
                         <label asp-for="OwnershipType" class="form-label">Ownership Type</label>
                         <input asp-for="OwnershipType" class="form-control" placeholder="Enter ownership type" />
                         <span asp-validation-for="OwnershipType" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="RegistrationDate" class="form-label">Registration Date</label>
+                        <input asp-for="RegistrationDate" type="date" class="form-control" />
+                        <span asp-validation-for="RegistrationDate" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="RegistrationExpiryDate" class="form-label">Registration Expiry Date</label>
                         <input asp-for="RegistrationExpiryDate" type="date" class="form-control" />
                         <span asp-validation-for="RegistrationExpiryDate" class="text-danger"></span>
                     </div>
-                </div>
+                </div> 
 
                 <!-- Owner Information -->
                 <h5 class="text-primary mt-4">Owner Information</h5>
                 <hr />
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <label asp-for="OwnerName" class="form-label">Owner's Name</label>
-                        <input asp-for="OwnerName" class="form-control" placeholder="Enter owner's name" />
+                        <label asp-for="OwnerName" class="form-label">Owner Name</label>
+                        <input asp-for="OwnerName" class="form-control" placeholder="Enter owner name" />
                         <span asp-validation-for="OwnerName" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
@@ -77,12 +79,12 @@
                     </div>
                     <div class="col-md-6">
                         <label asp-for="Email" class="form-label">Email</label>
-                        <input asp-for="Email" class="form-control" placeholder="Enter email" />
+                        <input asp-for="Email" type="email" class="form-control" placeholder="Enter email address" />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="col-md-6">
                         <label asp-for="Address" class="form-label">Address</label>
-                        <input asp-for="Address" class="form-control" placeholder="Enter address" />
+                        <textarea asp-for="Address" class="form-control" placeholder="Enter address"></textarea>
                         <span asp-validation-for="Address" class="text-danger"></span>
                     </div>
                 </div>
@@ -90,7 +92,7 @@
                 <!-- Submit and Cancel Buttons -->
                 <div class="d-flex justify-content-end mt-4">
                     <button type="submit" class="btn btn-primary me-2">
-                        <i class="bi bi-check-circle"></i> Submit
+                        <i class="bi bi-save"></i> Save
                     </button>
                     <a asp-action="Index" class="btn btn-secondary">
                         <i class="bi bi-x-circle"></i> Cancel

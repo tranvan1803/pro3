@@ -25,7 +25,7 @@ namespace ShowroomManagement.Controllers
         }
 
         // GET: Vehicle
-        public IActionResult Index(int? page, string searchTerm)
+        public IActionResult IndexAllAll(int? page, string searchTerm)
         {
             int pageSize = 10;
             int pageNumber = page ?? 1;
@@ -293,5 +293,36 @@ namespace ShowroomManagement.Controllers
         {
             return _context.Vehicles.Any(e => e.Id == id);
         }
+
+        [Authorize]
+        public IActionResult Index(int page = 1, int pageSize = 5)
+        {
+            var skip = (page - 1) * pageSize;
+
+            // Truy vấn danh sách xe
+            var vehicles = _context.Vehicles
+                                   .OrderBy(v => v.Name) // Sắp xếp theo tên
+                                   .Skip(skip)           // Bỏ qua các mục không cần thiết
+                                   .Take(pageSize)       // Lấy số lượng mục trên một trang
+                                   .ToList();
+
+            if (vehicles == null || !vehicles.Any())
+            {
+                // Trường hợp không có dữ liệu
+                vehicles = new List<Vehicle>();
+            }
+
+            // Tính tổng số xe và số trang
+            var totalItems = _context.Vehicles.Count();
+            var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = totalPages;
+
+            // Trả về danh sách xe
+            return View(vehicles);
+        }
     }
+
+
 }

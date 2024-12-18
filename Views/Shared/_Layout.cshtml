@@ -22,6 +22,24 @@
             margin-left: 10px;
             border-radius: 50%;
         }
+
+        .nav-link {
+            display: block; /* Đảm bảo hover áp dụng cho toàn bộ phần menu */
+            padding: 10px; /* Tạo khoảng cách giữa nội dung và viền */
+            border-radius: 5px; /* Làm mượt các góc cạnh (tùy chọn) */
+            transition: all 0.3s ease; /* Tạo hiệu ứng mượt */
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            background-color: #007bff; /* Màu nền khi hover */
+            color: #fff !important; /* Màu chữ và biểu tượng khi hover */
+        }
+
+        .nav-link.active {
+            background-color: #0056b3; /* Màu nền khi đang chọn */
+            color: #fff; /* Màu chữ và biểu tượng khi đang chọn */
+        }
     </style>
 </head>
 
@@ -84,32 +102,32 @@
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0 text-white">
+                            <a href="/" class="nav-link text-white">
                                 <i class="bi bi-house-door-fill fs-5"></i> <span class="ms-2">Home</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/Order" class="nav-link px-0 align-middle text-white">
+                            <a href="/Order" class="nav-link text-white">
                                 <i class="bi bi-basket-fill fs-5"></i> <span class="ms-2">Manage Orders</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/Customer" class="nav-link px-0 align-middle text-white">
+                            <a href="/Customer" class="nav-link text-white">
                                 <i class="bi bi-people-fill fs-5"></i> <span class="ms-2">Manage Customers</span>
                             </a>
                         </li>
                         <li>
-                            <a href="/Vehicle" class="nav-link px-0 align-middle text-white">
+                            <a href="/Vehicle" class="nav-link text-white">
                                 <i class="bi bi-truck fs-5"></i> <span class="ms-2">Manage Vehicles</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="/Setting" class="nav-link px-0 align-middle text-white">
+                        @* <li>
+                            <a href="/Setting" class="nav-link text-white">
                                 <i class="bi bi-gear-fill fs-5"></i> <span class="ms-2">Settings</span>
                             </a>
-                        </li>
+                        </li> *@
                         <li>
-                            <a href="/VehicleRegistration" class="nav-link px-0 align-middle text-white">
+                            <a href="/VehicleRegistration" class="nav-link text-white">
                                 <i class="bi bi-card-checklist fs-5"></i> <span class="ms-2">Vehicle Registrations</span>
                             </a>
                         </li>

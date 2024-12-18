@@ -1717,6 +1717,88 @@
       ]
     },
     {
+      "Route": "images/vehicles/671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg",
+      "AssetFile": "images/vehicles/671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118594"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vfx+V+x/IdXdQrmmn+yzCHDxZrY9SETjqJs8tHOcxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 06:24:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vfx+V+x/IdXdQrmmn+yzCHDxZrY9SETjqJs8tHOcxc="
+        }
+      ]
+    },
+    {
+      "Route": "images/vehicles/671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.mtohcx3ee0.jpg",
+      "AssetFile": "images/vehicles/671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118594"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vfx+V+x/IdXdQrmmn+yzCHDxZrY9SETjqJs8tHOcxc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 06:24:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mtohcx3ee0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vfx+V+x/IdXdQrmmn+yzCHDxZrY9SETjqJs8tHOcxc="
+        },
+        {
+          "Name": "label",
+          "Value": "images/vehicles/671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg"
+        }
+      ]
+    },
+    {
       "Route": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "AssetFile": "images/vehicles/7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "Selectors": [],

@@ -1,0 +1,21 @@
+@model ShowroomManagement.Models.Order
+
+@{
+    ViewData["Title"] = "Invoice";
+}
+
+<h2>Invoice</h2>
+
+<div class="card">
+    <div class="card-header">
+        Order Invoice
+    </div>
+    <div class="card-body">
+        <p><strong>Order Date:</strong> @Model.OrderDate.ToString("g")</p>
+        <p><strong>Vehicle:</strong> @Model.Vehicle?.Name</p>
+        <p><strong>Price per unit:</strong> @Model.Vehicle?.Price.ToString("C")</p>
+        <p><strong>Quantity:</strong> @Model.Quantity</p>
+        <p><strong>Total Price:</strong> @Model.TotalPrice.ToString("C")</p>
+        <p><strong>Payment Method:</strong> @Model.PaymentMethod</p>
+    </div>
+</div>

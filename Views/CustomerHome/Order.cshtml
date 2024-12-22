@@ -1,0 +1,33 @@
+@model ShowroomManagement.Models.OrderCreateViewModel
+
+@{
+    ViewData["Title"] = "Place Order";
+}
+
+<h2>Place Order</h2>
+
+<form method="post" asp-action="Order">
+    <div class="form-group">
+        <label>Vehicle Name</label>
+        <input type="text" class="form-control" value="@Model.VehicleName" readonly />
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="text" class="form-control" value="@Model.Price.ToString("C")" readonly />
+    </div>
+    <div class="form-group">
+        <label>Quantity</label>
+        <input type="number" class="form-control" asp-for="Quantity" min="1" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Payment Method</label>
+        <select class="form-control" asp-for="PaymentMethod">
+            <option value="CreditCard">Credit Card</option>
+            <option value="Cash">Cash</option>
+            <option value="BankTransfer">Bank Transfer</option>
+        </select>
+        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Place Order</button>
+</form>

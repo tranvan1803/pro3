@@ -27,7 +27,13 @@ namespace ShowroomManagement.Models
         public IEnumerable<SelectListItem> Vehicles { get; set; } = new List<SelectListItem>();
         public IEnumerable<SelectListItem> Customers { get; set; } = new List<SelectListItem>();
         public IEnumerable<SelectListItem> PaymentMethods { get; set; } = new List<SelectListItem>();
-        
+        public string? VehicleName { get; set; } // Thông tin xe
+        public decimal Price { get; set; } // Giá xe
+        [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "Quantity must be at least 1.")]
+        public int Quantity { get; set; }
+
     }
+    
 
 }

@@ -36,9 +36,51 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin")); // Policy chỉ dành cho Admin
+    options.AddPolicy("CustomerOnly", policy => policy.RequireRole("Customer")); // Policy chỉ dành cho Customer
 });
 
+// Tạo và gán vai trò mặc định (Admin và Customer)
+async Task CreateRoles(IServiceProvider serviceProvider)
+{
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+    // Tạo các vai trò nếu chưa có
+    string[] roles = { "Admin", "Customer" };
+    foreach (var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+        {
+            await roleManager.CreateAsync(new IdentityRole(role));
+        }
+    }
+
+    // Gán vai trò Admin cho tài khoản mặc định
+    var adminUser = await userManager.FindByEmailAsync("admin@showroom.com");
+    if (adminUser == null)
+    {
+        var newAdmin = new ApplicationUser
+        {
+            UserName = "admin",
+            Email = "admin@showroom.com",
+            Avatar = "/images/default-avatar.png"
+        };
+        var result = await userManager.CreateAsync(newAdmin, "Admin@123");
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(newAdmin, "Admin");
+        }
+    }
+}
+
 var app = builder.Build();
+
+// Tạo vai trò và gán tài khoản mặc định
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await CreateRoles(services);
+}
 
 // Middleware pipeline
 if (!app.Environment.IsDevelopment())
@@ -55,15 +97,6 @@ app.UseRouting();
 // Thêm Authentication và Authorization vào pipeline
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.UseEndpoints(endpoints =>
-{
-    _ = endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{page?}");
-});
-
-
 
 // Định tuyến mặc định
 app.MapControllerRoute(

@@ -10,7 +10,6 @@ using ShowroomManagement.Models;
 
 namespace ShowroomManagement.Controllers
 {
-    [Authorize]
     public class CustomerController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -107,7 +106,7 @@ namespace ShowroomManagement.Controllers
                     {
                         throw;
                     }
-}
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(customer);
@@ -150,5 +149,11 @@ namespace ShowroomManagement.Controllers
         {
             return _context.Customers.Any(e => e.Id == id);
         }
+        [Authorize(Roles = "Customer")]
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
     }
 }

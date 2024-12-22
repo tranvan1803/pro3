@@ -13,6 +13,7 @@ namespace ShowroomManagement.Models
 
         public Vehicle? Vehicle { get; set; }  // Mối quan hệ với Vehicle
         public Customer? Customer { get; set; }  // Mối quan hệ với Customer
+        public int Quantity { get; set; } // Thêm số lượng
     }
 
     public enum PaymentMethod

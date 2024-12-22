@@ -1,323 +1,347 @@
 {
   "Files": [
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css",
+      "Id": "E:\\pro3\\pro3\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShowroomManagement.bundle.scp.css",
       "PackagePath": "staticwebassets\\ShowroomManagement.h5lg8hjfyn.bundle.scp.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\css\\site.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\favicon.ico",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\16a00ca4-88f2-46ca-83e1-745fd1d4999d_Screenshot (4).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\0baf67ef-e120-440d-8b4e-cb59b2deaff8_Screenshot (10).png",
+      "PackagePath": "staticwebassets\\images\\0baf67ef-e120-440d-8b4e-cb59b2deaff8_Screenshot (10).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\16a00ca4-88f2-46ca-83e1-745fd1d4999d_Screenshot (4).png",
       "PackagePath": "staticwebassets\\images\\16a00ca4-88f2-46ca-83e1-745fd1d4999d_Screenshot (4).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\19d19495-c5ae-42d6-8081-e883d4d5b7c1_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\19d19495-c5ae-42d6-8081-e883d4d5b7c1_Screenshot (3).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png",
       "PackagePath": "staticwebassets\\images\\38e0ccc0-1b13-400a-8891-a819bd8b73a4_Screenshot (3).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\3fc6accc-4e85-47e9-ad59-c0c8f4068c73_Screenshot (10).png",
+      "PackagePath": "staticwebassets\\images\\3fc6accc-4e85-47e9-ad59-c0c8f4068c73_Screenshot (10).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png",
       "PackagePath": "staticwebassets\\images\\5b8315d9-dc90-443a-b358-d9c3e1613770_Screenshot (4).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\7c53971d-28a1-4849-a45b-4728262260c7_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\7c53971d-28a1-4849-a45b-4728262260c7_Screenshot (3).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\96860669-ff6d-4c25-9f51-bda479d6b792_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\96860669-ff6d-4c25-9f51-bda479d6b792_Screenshot (3).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\9bf1e7c5-825a-4597-8812-0fa8e3af35b7_Screenshot (5).png",
+      "PackagePath": "staticwebassets\\images\\9bf1e7c5-825a-4597-8812-0fa8e3af35b7_Screenshot (5).png"
+    },
+    {
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\a51b899b-ebcf-4370-a9f5-ec0b282976cb_Screenshot (5).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\dbf4fc5d-6766-4f8d-a6d3-882edcf00068_Screenshot (5).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\default-avatar.png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\default-avatar.png",
       "PackagePath": "staticwebassets\\images\\default-avatar.png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\ef34a3ef-fee2-4237-aa2c-4406d85592e1_Screenshot (5).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\012b678c-2a61-402b-a084-e9b3ae05f9a4_d6d79b9d-09e6-4af6-aa82-ccc769797ded.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\012b678c-2a61-402b-a084-e9b3ae05f9a4_d6d79b9d-09e6-4af6-aa82-ccc769797ded.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\012b678c-2a61-402b-a084-e9b3ae05f9a4_d6d79b9d-09e6-4af6-aa82-ccc769797ded.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\2d9b237f-02e1-4276-b9fe-cbcd8f4aaed1_5671c9ec-56df-4c1e-91a9-ed7982b926a8.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\2d9b237f-02e1-4276-b9fe-cbcd8f4aaed1_5671c9ec-56df-4c1e-91a9-ed7982b926a8.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\2d9b237f-02e1-4276-b9fe-cbcd8f4aaed1_5671c9ec-56df-4c1e-91a9-ed7982b926a8.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\5c69b9aa-d372-4339-92ed-b7bc82f67271_a1b5d649-9c15-4606-92ac-2a675a7142be.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\5c69b9aa-d372-4339-92ed-b7bc82f67271_a1b5d649-9c15-4606-92ac-2a675a7142be.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\5c69b9aa-d372-4339-92ed-b7bc82f67271_a1b5d649-9c15-4606-92ac-2a675a7142be.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\671935ec-cf1b-4bd4-aa67-fa27b9ed12a6_e380e2c6-fa61-4a8c-a019-06eb7147fe01.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\7720d458-a905-40c1-bd3a-0cccb40dd824_ferrari-1.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\b31ab011-43c4-4135-97e6-3f5a9ff873e0_86fca3e0-4486-46a2-bf62-3f5320f6cdb4.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\b31ab011-43c4-4135-97e6-3f5a9ff873e0_86fca3e0-4486-46a2-bf62-3f5320f6cdb4.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\b31ab011-43c4-4135-97e6-3f5a9ff873e0_86fca3e0-4486-46a2-bf62-3f5320f6cdb4.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\d38a7537-6c87-4c5b-82fe-f26d50672d7e_c36484a7-2bc6-4cfd-8ce0-d375f3eab540.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\d38a7537-6c87-4c5b-82fe-f26d50672d7e_c36484a7-2bc6-4cfd-8ce0-d375f3eab540.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\d38a7537-6c87-4c5b-82fe-f26d50672d7e_c36484a7-2bc6-4cfd-8ce0-d375f3eab540.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png",
       "PackagePath": "staticwebassets\\images\\vehicles\\e548d548-5c4c-4e40-be6b-9c3841f16c1e_Screenshot (5).png"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg",
       "PackagePath": "staticwebassets\\images\\vehicles\\ef8219b7-e805-4849-b7c3-ef982939a89b_ferrari-1.jpg"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\js\\site.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Id": "D:\\T2307A\\Project_III\\ShowroomManagement\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Id": "E:\\pro3\\pro3\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {

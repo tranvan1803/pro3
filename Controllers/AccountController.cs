@@ -41,17 +41,27 @@ public class AccountController : Controller
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null)
             {
-                // Nếu Avatar là NULL thì sử dụng ảnh mặc định
                 string avatarUrl = user.Avatar ?? "/images/default-avatar.png";
 
                 var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, lockoutOnFailure: false);
 
                 if (result.Succeeded)
                 {
-                    // Lưu avatar vào TempData để sử dụng trong layout view
                     TempData["AvatarUrl"] = avatarUrl;
-                    TempData["SuccessMessage"] = "Login successful!";
-                    return RedirectToLocal(returnUrl);
+
+                    // Kiểm tra vai trò của người dùng
+                    if (await _userManager.IsInRoleAsync(user, "Admin"))
+                    {
+                        return RedirectToAction("Index", "Home"); // Chuyển Admin tới Home
+                    }
+                    else if (await _userManager.IsInRoleAsync(user, "Customer"))
+                    {
+                        return RedirectToAction("Index", "CustomerHome"); // Chuyển Customer tới CustomerHome
+                    }
+                    else
+                    {
+                        return RedirectToLocal(returnUrl); // Nếu không có vai trò, chuyển tới returnUrl
+                    }
                 }
 
                 TempData["ErrorMessage"] = result.IsLockedOut ? "This account is locked out." : "Invalid login attempt.";
@@ -64,6 +74,9 @@ public class AccountController : Controller
 
         return View(model);
     }
+
+
+
 
     // GET: /Account/Register
     [HttpGet]
@@ -79,16 +92,17 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
-            string avatarPath = "/images/default-avatar.png"; // Mặc định ảnh avatar
+            var user = new ApplicationUser
+            {
+                UserName = model.Username,
+                Email = model.Email,
+                Avatar = "/images/default-avatar.png"
+            };
 
-            // Kiểm tra nếu người dùng có chọn ảnh đại diện
             if (model.Avatar != null && model.Avatar.Length > 0)
             {
                 var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
-                if (!Directory.Exists(uploadsFolder))
-                {
-                    Directory.CreateDirectory(uploadsFolder);
-                }
+                Directory.CreateDirectory(uploadsFolder);
 
                 var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(model.Avatar.FileName)}";
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -98,34 +112,18 @@ public class AccountController : Controller
                     await model.Avatar.CopyToAsync(stream);
                 }
 
-                avatarPath = $"/images/{uniqueFileName}"; // Cập nhật đường dẫn ảnh
+                user.Avatar = $"/images/{uniqueFileName}";
             }
 
-            var user = new ApplicationUser
-            {
-                UserName = model.Username,
-                Email = model.Email,
-                Avatar = avatarPath // Lưu đường dẫn ảnh vào Avatar
-            };
-
             var result = await _userManager.CreateAsync(user, model.Password);
-
             if (result.Succeeded)
             {
-                // Gán vai trò Admin nếu checkbox IsAdmin được chọn
-                if (model.IsAdmin)
-                {
-                    if (!await _roleManager.RoleExistsAsync("Admin"))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole("Admin"));
-                    }
+                // Gán vai trò mặc định là Customer
+                await _userManager.AddToRoleAsync(user, "Customer");
 
-                    await _userManager.AddToRoleAsync(user, "Admin");
-                }
-
-                TempData["SuccessMessage"] = "Registration successful!";
                 await _signInManager.SignInAsync(user, isPersistent: false);
-                return RedirectToAction(nameof(HomeController.Index), "Home");
+                TempData["SuccessMessage"] = "Registration successful!";
+                return RedirectToAction("Dashboard", "Customer");
             }
 
             foreach (var error in result.Errors)
@@ -134,9 +132,9 @@ public class AccountController : Controller
             }
         }
 
-        TempData["ErrorMessage"] = "Registration failed. Please correct the errors and try again.";
         return View(model);
     }
+
 
     // POST: /Account/Logout
     [HttpPost]

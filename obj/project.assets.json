@@ -11786,19 +11786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\T2307A\\Project_III\\ShowroomManagement\\ShowroomManagement.csproj",
+      "projectUniqueName": "E:\\pro3\\pro3\\ShowroomManagement.csproj",
       "projectName": "ShowroomManagement",
-      "projectPath": "D:\\T2307A\\Project_III\\ShowroomManagement\\ShowroomManagement.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\T2307A\\Project_III\\ShowroomManagement\\obj\\",
+      "projectPath": "E:\\pro3\\pro3\\ShowroomManagement.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "E:\\pro3\\pro3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

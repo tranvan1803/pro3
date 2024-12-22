@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.0.0/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.0.0/dist/jquery.validate.unobtrusive.min.js"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <style>
         .welcome-section {
@@ -24,21 +25,29 @@
         }
 
         .nav-link {
-            display: block; /* Đảm bảo hover áp dụng cho toàn bộ phần menu */
-            padding: 10px; /* Tạo khoảng cách giữa nội dung và viền */
-            border-radius: 5px; /* Làm mượt các góc cạnh (tùy chọn) */
-            transition: all 0.3s ease; /* Tạo hiệu ứng mượt */
+            display: block;
+            /* Đảm bảo hover áp dụng cho toàn bộ phần menu */
+            padding: 10px;
+            /* Tạo khoảng cách giữa nội dung và viền */
+            border-radius: 5px;
+            /* Làm mượt các góc cạnh (tùy chọn) */
+            transition: all 0.3s ease;
+            /* Tạo hiệu ứng mượt */
             text-decoration: none;
         }
 
         .nav-link:hover {
-            background-color: #007bff; /* Màu nền khi hover */
-            color: #fff !important; /* Màu chữ và biểu tượng khi hover */
+            background-color: #007bff;
+            /* Màu nền khi hover */
+            color: #fff !important;
+            /* Màu chữ và biểu tượng khi hover */
         }
 
         .nav-link.active {
-            background-color: #0056b3; /* Màu nền khi đang chọn */
-            color: #fff; /* Màu chữ và biểu tượng khi đang chọn */
+            background-color: #0056b3;
+            /* Màu nền khi đang chọn */
+            color: #fff;
+            /* Màu chữ và biểu tượng khi đang chọn */
         }
     </style>
 </head>
@@ -60,23 +69,26 @@
                         {
                             <li class="nav-item welcome-section d-flex align-items-center">
                                 <span class="nav-link text-light fw-bold">Welcome, @User.Identity.Name</span>
-                                <img src="@User.Claims.FirstOrDefault(c => c.Type == "Avatar")?.Value ?? "/images/default-avatar.png"" 
-                                    alt="Avatar" width="40" height="40" class="ms-2 shadow-sm"
+                                <img src="@User.Claims.FirstOrDefault(c => c.Type == "Avatar")?.Value ?? "
+                                    /images/default-avatar.png"" alt="Avatar" width="40" height="40" class="ms-2 shadow-sm"
                                     onerror="this.src='/images/default-avatar.png'" />
                             </li>
                             <li class="nav-item">
                                 <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
-                                    <button type="submit" class="btn btn-light btn-sm nav-link text-dark fw-bold ms-3">Logout</button>
+                                    <button type="submit"
+                                        class="btn btn-light btn-sm nav-link text-dark fw-bold ms-3">Logout</button>
                                 </form>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="btn btn-outline-light btn-sm nav-link" asp-controller="Account" asp-action="Login">Login</a>
+                                <a class="btn btn-outline-light btn-sm nav-link" asp-controller="Account"
+                                    asp-action="Login">Login</a>
                             </li>
                             <li class="nav-item ms-2">
-                                <a class="btn btn-light btn-sm text-dark nav-link" asp-controller="Account" asp-action="Register">Register</a>
+                                <a class="btn btn-light btn-sm text-dark nav-link" asp-controller="Account"
+                                    asp-action="Register">Register</a>
                             </li>
                         }
                         @* @if (User.IsInRole("Admin"))
@@ -96,42 +108,52 @@
             <!-- Sidebar -->
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark shadow-sm">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <i class="bi bi-menu-button-wide fs-4"></i>
                         <span class="fs-5 ms-2 fw-bold">Menu</span>
                     </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link text-white">
-                                <i class="bi bi-house-door-fill fs-5"></i> <span class="ms-2">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/Order" class="nav-link text-white">
-                                <i class="bi bi-basket-fill fs-5"></i> <span class="ms-2">Manage Orders</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/Customer" class="nav-link text-white">
-                                <i class="bi bi-people-fill fs-5"></i> <span class="ms-2">Manage Customers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/Vehicle" class="nav-link text-white">
-                                <i class="bi bi-truck fs-5"></i> <span class="ms-2">Manage Vehicles</span>
-                            </a>
-                        </li>
-                        @* <li>
-                            <a href="/Setting" class="nav-link text-white">
-                                <i class="bi bi-gear-fill fs-5"></i> <span class="ms-2">Settings</span>
-                            </a>
-                        </li> *@
-                        <li>
-                            <a href="/VehicleRegistration" class="nav-link text-white">
-                                <i class="bi bi-card-checklist fs-5"></i> <span class="ms-2">Vehicle Registrations</span>
-                            </a>
-                        </li>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a href="/" class="nav-link text-white">
+                                    <i class="bi bi-house-door-fill fs-5"></i> <span class="ms-2">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Order" class="nav-link text-white">
+                                    <i class="bi bi-basket-fill fs-5"></i> <span class="ms-2">Manage Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Customer" class="nav-link text-white">
+                                    <i class="bi bi-people-fill fs-5"></i> <span class="ms-2">Manage Customers</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Vehicle" class="nav-link text-white">
+                                    <i class="bi bi-truck fs-5"></i> <span class="ms-2">Manage Vehicles</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/VehicleRegistration" class="nav-link text-white">
+                                    <i class="bi bi-card-checklist fs-5"></i> <span class="ms-2">Vehicle
+                                        Registrations</span>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a href="/Vehicle" class="nav-link text-white">
+                                    <i class="bi bi-truck fs-5"></i> <span class="ms-2">Browse Vehicles</span>
+                                </a>
+                            </li>
+                        }
                     </ul>
+
                 </div>
             </div>
 
@@ -161,7 +183,8 @@
 
     <footer class="border-top footer text-muted bg-light py-3">
         <div class="container text-center">
-            &copy; 2024 - ShowroomManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none text-primary">Privacy</a>
+            &copy; 2024 - ShowroomManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy"
+                class="text-decoration-none text-primary">Privacy</a>
         </div>
     </footer>
 
